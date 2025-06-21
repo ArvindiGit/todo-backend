@@ -105,6 +105,3 @@ export const logout = async (_, res) => {
 //   res.cookie("token", token, { httpOnly: true }).json({ message: "Logged in" });
 // };
 
-// exports.logout = (req, res) => {
-//   res.clearCookie("token").json({ message: "Logged out" });
-// };

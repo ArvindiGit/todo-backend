@@ -3,7 +3,7 @@ import { Todo } from "../models/Todo.js";
 export const createTodo = async (req, res) => {
   try {
     const { title, description } = req.body;
-    const userId = req.user.userId; // ✅ Secure: from middleware
+    const userId = req.user.userId;
     if (!title || !description) {
       return res.status(403).json({
         success: false,
