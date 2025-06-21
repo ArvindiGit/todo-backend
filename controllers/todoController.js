@@ -11,7 +11,6 @@ export const createTodo = async (req, res) => {
       });
     }
 
-    // console.log("create todo", "fklds", req.user.userId);
     const todo = await new Todo({ title, description, user: userId }).save();
 
     return res.status(201).json({
