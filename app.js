@@ -19,6 +19,8 @@ app.use("/api/v1/todo", todoRoute);
 
 const PORT = process.env.PORT;
 
-app.listen(PORT, () => {
-  console.log(`server runing on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`server runing on port ${PORT}`);
+// });
+
+export default app
